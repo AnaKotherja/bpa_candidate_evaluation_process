@@ -9,7 +9,6 @@ public class ZeebeConfiguration {
 
     @Bean
     public MemoryHealthIndicatorProperties memoryHealthIndicatorProperties() {
-        // Create and return your desired MemoryHealthIndicatorProperties bean
         return new MemoryHealthIndicatorProperties();
     }
 }
