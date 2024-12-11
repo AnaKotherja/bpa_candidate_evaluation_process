@@ -73,7 +73,7 @@ The BPMN file is automatically deployed during application startup. Ensure that 
 A process instance can be started programmatically using the CandidateEvaluationProcessApplication. The initial variables include:
 - applicantId: Randomly generated string.
 - applicantExperience: Number of years of experience.
-- applicantName: Example: "Ana Kotherja".
+- applicantName
 
 ## Contact
 For any queries or support, contact the project maintainers.
