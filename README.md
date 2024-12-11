@@ -52,8 +52,7 @@ In the BPMN file Process-Automation-Exercise.bpmn is the proces workflow:
 
 - Java 17+
 - Maven 3.6+
-
-Camunda Zeebe engine running locally (ensure the gRPC server is active at http://127.0.0.1:26500).
+- Camunda Zeebe engine running locally (ensure the gRPC server is active at http://127.0.0.1:26500).
 
 ### Steps to run
 1. Clone the repository.
