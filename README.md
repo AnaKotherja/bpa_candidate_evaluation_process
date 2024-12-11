@@ -47,12 +47,49 @@ In the BPMN file Process-Automation-Exercise.bpmn is the proces workflow:
 6. Rejection or Acceptance Notifications
 7. End Event
 
-## Running the application
+## Running the Application
+
 ### Prerequisites
 
-- Java 17+
-- Maven 3.6+
-- Camunda Zeebe engine running locally (ensure the gRPC server is active at http://127.0.0.1:26500).
+- **Java 17+** (or OpenJDK 21+)
+- **Maven 3.6+**
+- **Camunda Run 8 installed and running locally**:  
+   Ensure that the **gRPC server** is active at [http://127.0.0.1:26500](http://127.0.0.1:26500) and the **REST API server** is running at [http://127.0.0.1:8080](http://127.0.0.1:8080).
+
+   #### Steps to Install Camunda 8 Run:
+   1. **Download Camunda 8 Run**  
+      Visit the official Camunda 8 GitHub releases page:  
+      [Camunda Run 8 Releases](https://github.com/camunda/camunda-run/releases)  
+      Download the latest release of Camunda 8 Run for your operating system and architecture (e.g., `.tgz` for Linux/macOS or `.zip` for Windows).
+
+   2. **Extract the Camunda 8 Run Files**  
+      - On **Linux/macOS**, open the `.tgz` file to extract the Camunda 8 Run script into a new directory.  
+      - On **Windows**, open the `.zip` file and extract it to your desired directory.
+
+   3. **Navigate to the Camunda 8 Run Directory**  
+      Open a terminal (or Command Prompt on Windows) and navigate to the directory where the Camunda 8 Run files were extracted.
+
+   4. **Start Camunda 8 Run**  
+      Run the following command to start Camunda 8 Run:
+
+      - On **Linux/macOS**:
+
+        ```bash
+        ./start.sh
+        ```
+
+      - On **Windows**:
+
+        ```bash
+        .\c8run.exe start
+        ```
+
+   5. **Verify the Start Process**  
+      After a few moments, the Camunda 8 Run engine will start, and a new **Operate** window should automatically open.  
+      - **Operate** can be accessed at [http://localhost:8080/operate](http://localhost:8080/operate).
+      - **Monitor** To monitor the tasks that are currently running navigate to [http://localhost:8080/tasklist](http://localhost:8080/tasklist) after starting the CandidateEvaluationProcessApplication.
+
+
 
 ### Steps to run
 1. Clone the repository.
