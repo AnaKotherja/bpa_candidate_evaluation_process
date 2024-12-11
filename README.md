@@ -58,7 +58,7 @@ Camunda Zeebe engine running locally (ensure the gRPC server is active at http:/
 ### Steps to run
 1. Clone the repository.
 ``` git clone https://github.com/AnaKotherja/bpa_candidate_evaluation_process.git ```
-2. Navigate to the project directory. ``` cd candidate-evaluation-process ```
+2. Navigate to the project directory. ``` cd bpa_candidate_evaluation_process2 ```
 3. Build the project. ``` mvn clean install ```
 4. Start the application. ``` mvn spring-boot:run ```
 5. Once the application is running, got to http://localhost:8080/operate/login and log in with the username *demo* and password *demo*.
